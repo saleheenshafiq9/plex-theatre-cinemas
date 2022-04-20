@@ -1,0 +1,46 @@
+<div class="container my-3">
+  <div
+    id="carouselExampleSlidesOnly"
+    class="carousel slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="../../../assets/6under.jpg"
+          class="d-block"
+          alt="..."
+          width="95%"
+          height="550px"
+        />
+        <button class="btn" (click)="open(1)">
+          <fa-icon [icon]="faPlay" class="mx-2"></fa-icon> Watch Trailer
+        </button>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="../../../assets/adam.jpg"
+          class="d-block w-100"
+          alt="..."
+          width="95%"
+          height="550px"
+        />
+        <button class="btn" (click)="open(2)">
+          <fa-icon [icon]="faPlay" class="mx-2"></fa-icon>Watch Trailer
+        </button>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="../../../assets/spidey.jpg"
+          class="d-block w-100"
+          alt="..."
+          width="95%"
+          height="550px"
+        />
+        <button class="btn" (click)="open(3)">
+          <fa-icon [icon]="faPlay" class="mx-2"></fa-icon>Watch Trailer
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -3,8 +3,8 @@
     <div class="col-md-6">
       <div class="card">
         <div class="text-center">
-          <h1>Login</h1>
-          <h6>Please Enter Email and Password to Continue!</h6>
+          <h1 style="font-weight: 600" class="mb-5">Login</h1>
+          <h6 class="mb-5">Please Enter Email and Password to Continue!</h6>
         </div>
         <form>
           <form>
@@ -35,18 +35,18 @@
               />
             </div>
 
-            <button type="submit" class="btn btn-primary" (click)="login()">
-              Login
-            </button>
+            <button type="submit" class="btn" (click)="login()">Login</button>
             <p class="text-light my-3">
-              Don't have an account?<a routerLink="/signup"> Sign up here.</a>
+              Don't have an account?<a (click)="clickSignup()">
+                Sign up here.</a
+              >
             </p>
           </form>
         </form>
       </div>
     </div>
     <div class="col-6">
-      <router-outlet></router-outlet>
+      <!-- <router-outlet></router-outlet> -->
     </div>
   </div>
 </div>

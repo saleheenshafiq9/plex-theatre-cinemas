@@ -13,11 +13,7 @@ import { LoginComponent } from '../login/login.component';
 export class SignUpComponent implements OnInit {
   public signupForm!: FormGroup;
   user = new User();
-  constructor(
-    private router: Router,
-    private formbuilder: FormBuilder,
-    private authService: AuthService
-  ) {}
+  constructor(private router: Router, private authService: AuthService) {}
 
   ngOnInit(): void {}
   signup(): void {

@@ -3,8 +3,8 @@
     <div class="col-md-6">
       <div class="card">
         <div class="text-center">
-          <h1>Sign up</h1>
-          <h6>Register Yourself!</h6>
+          <h1 style="font-weight: 600" class="mb-5">Sign up</h1>
+          <h6 class="mb-5">Register Yourself!</h6>
         </div>
         <form>
           <form FormGroup="signupForm">
@@ -60,10 +60,14 @@
               />
             </div>
 
-            <button type="submit" class="btn btn-primary" (click)="signup()">
+            <button
+              type="submit"
+              class="btn text-light my-3"
+              (click)="signup()"
+            >
               Sign up
             </button>
-            <p>
+            <p class="text-light">
               Have account?<a routerLink="/login" routerLinkActive="active"
                 >Login</a
               >

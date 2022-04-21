@@ -19,4 +19,7 @@ export class LoginComponent implements OnInit {
     this.authService.setUser(this.user);
     this.router.navigate(['/']);
   }
+  clickSignup(): void {
+    this.router.navigate(['signup']);
+  }
 }

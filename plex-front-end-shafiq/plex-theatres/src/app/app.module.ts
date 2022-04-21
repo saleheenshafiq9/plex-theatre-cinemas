@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { TicketPriceComponent } from './ticket-price/ticket-price.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     LoginComponent,
     NavbarComponent,
     SignUpComponent,
+    TicketPriceComponent,
   ],
   imports: [
     BrowserModule,

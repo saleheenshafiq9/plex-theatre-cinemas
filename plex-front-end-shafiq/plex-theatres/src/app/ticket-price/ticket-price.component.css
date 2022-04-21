@@ -1,0 +1,46 @@
+a {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+}
+
+table {
+  background: rgb(25, 16, 72);
+  background: radial-gradient(
+    circle,
+    rgba(25, 16, 72, 1) 0%,
+    rgba(11, 6, 35, 1) 50%,
+    rgba(15, 9, 52, 1) 100%
+  );
+  font-family: "Quicksand", sans-serif;
+}
+
+.btn {
+  background: #060436;
+  background-image: -webkit-linear-gradient(top, #060436, #100e52);
+  background-image: -moz-linear-gradient(top, #060436, #100e52);
+  background-image: -ms-linear-gradient(top, #060436, #100e52);
+  background-image: -o-linear-gradient(top, #060436, #100e52);
+  background-image: linear-gradient(to bottom, #060436, #100e52);
+  -webkit-border-radius: 16;
+  -moz-border-radius: 16;
+  border-radius: 16px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  background: #252fb8;
+  background-image: -webkit-linear-gradient(top, #252fb8, #123f5c);
+  background-image: -moz-linear-gradient(top, #252fb8, #123f5c);
+  background-image: -ms-linear-gradient(top, #252fb8, #123f5c);
+  background-image: -o-linear-gradient(top, #252fb8, #123f5c);
+  background-image: linear-gradient(to bottom, #252fb8, #123f5c);
+  text-decoration: none;
+}

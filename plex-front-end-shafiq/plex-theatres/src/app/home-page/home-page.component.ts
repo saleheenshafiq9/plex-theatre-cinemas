@@ -1,5 +1,4 @@
-import { Component, OnInit, Pipe, PipeTransform } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Trailer } from 'src/app/trailer';
@@ -94,7 +93,6 @@ export class HomePageComponent implements OnInit {
   trailers: Trailer[] = [];
   constructor(
     private modalService: NgbModal,
-    private router: Router,
     private trailerService: TrailerService
   ) {}
 
@@ -107,6 +105,5 @@ export class HomePageComponent implements OnInit {
     const modalRef = this.modalService.open(NgbdModalContent);
     modalRef.componentInstance.name = 'World';
     modalRef.componentInstance.index = givenIndex;
-    this.router.navigate(['trailers']);
   }
 }

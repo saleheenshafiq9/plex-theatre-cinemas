@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <h1>Login</h1>
+          <h6>Please Enter Email and Password to Continue!</h6>
+        </div>
+        <form>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Username</label
+              >
+
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                [(ngModel)]="user.username"
+                [ngModelOptions]="{ standalone: true }"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                [(ngModel)]="user.password"
+                [ngModelOptions]="{ standalone: true }"
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary" (click)="login()">
+              Login
+            </button>
+            <p class="text-light my-3">
+              Don't have an account?<a routerLink="/signup"> Sign up here.</a>
+            </p>
+          </form>
+        </form>
+      </div>
+    </div>
+    <div class="col-6">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

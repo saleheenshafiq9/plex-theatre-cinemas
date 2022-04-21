@@ -1,0 +1,76 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <h1>Sign up</h1>
+          <h6>Register Yourself!</h6>
+        </div>
+        <form>
+          <form FormGroup="signupForm">
+            <div class="mb-3">
+              <label class="form-label">First Name</label>
+
+              <input
+                type="text"
+                class="form-control"
+                [(ngModel)]="user.firstName"
+                [ngModelOptions]="{ standalone: true }"
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Last Name</label>
+
+              <input
+                type="text"
+                class="form-control"
+                [(ngModel)]="user.lastName"
+                [ngModelOptions]="{ standalone: true }"
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Username</label>
+
+              <input
+                type="text"
+                class="form-control"
+                [(ngModel)]="user.username"
+                [ngModelOptions]="{ standalone: true }"
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                [(ngModel)]="user.email"
+                [ngModelOptions]="{ standalone: true }"
+              />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                [(ngModel)]="user.password"
+                [ngModelOptions]="{ standalone: true }"
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary" (click)="signup()">
+              Sign up
+            </button>
+            <p>
+              Have account?<a routerLink="/login" routerLinkActive="active"
+                >Login</a
+              >
+            </p>
+          </form>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
